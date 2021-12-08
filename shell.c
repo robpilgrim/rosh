@@ -22,7 +22,7 @@ int cd(char **args) {
 
     if(args[1] == NULL || args[1][0]  ==  '~') chdir(home);
     else if(chdir(args[1]) != 0) puts(strerror(errno)); 
-
+//joker
     return 1;
 }
 
